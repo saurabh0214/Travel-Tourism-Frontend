@@ -1,0 +1,509 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* in map slide image */
+
+.hii{
+	/* background-image: url("https://r4.wallpaperflare.com/wallpaper/649/484/984/photography-landscape-nature-mountains-wallpaper-c79d8611d8f43eda8fb79ffde6c12106.jpg"); */
+
+	
+	animation:  image  step-end 10s infinite;
+	
+}
+
+
+
+@keyframes image{
+	0%{
+		background-image: url("https://r4.wallpaperflare.com/wallpaper/649/484/984/photography-landscape-nature-mountains-wallpaper-c79d8611d8f43eda8fb79ffde6c12106.jpg");
+	}
+	/* 25%{
+		background-image:url("https://r4.wallpaperflare.com/wallpaper/764/431/702/river-trees-forest-clouds-wallpaper-d4ba55cd41062d25051044aa61cfaf9c.jpg");
+
+	}
+
+	50%{
+		background-image: url("https://r4.wallpaperflare.com/wallpaper/335/245/294/nature-landscape-green-lake-wallpaper-4940780de10a3debe6c7484f20e1e6ed.jpg");
+	}
+		
+	100%{
+		background-image: url("https://r4.wallpaperflare.com/wallpaper/20/481/77/landscape-nature-lake-trees-wallpaper-22a172501db6be8bca5872e55098b952.jpg");
+	} */
+	
+}
+/* banner section */
+.banner {
+	background-image: url("https://lh3.googleusercontent.com/p/AF1QipPvqAdrjIhBcE2SZDqhiHoooncNNv9fdh1hCNIj=s1360-w1360-h1020");
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*overflow: hidden;*/
+	width: 100%;
+	height: 250px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .banner::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	/*background-size: 100%;*/
+  }
+  .banner-text-item {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+  }
+  .banner-heading {
+	flex: 1;
+  }
+  .banner-heading h1 {
+	font-size: 100px;
+	font-weight: normal;
+	color: white;
+	font-family: Satisfy;
+  }
+  .banner-text-item .form {
+	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(250, 247, 247, 0.1);
+	border-radius: 50px;
+	width: 70%;
+	padding: 1% 2%;
+  }
+  .banner-text-item input,
+  .banner-text-item .date,
+  .banner-text-item .book {
+	padding: 15px;
+	margin-right: 10px;
+	font-size: 18px;
+	font-family: Roboto;
+	border-radius: 5px;
+	outline: 0;
+	border: none;
+  }
+  .banner-text-item input {
+	width: 50%;
+	flex: 2;
+	border-radius: 50px;
+  }
+  .banner-text-item .date {
+	width: 20%;
+	flex: 1;
+	border-radius: 50px;
+  }
+  .banner-text-item .book {
+	width: 25%;
+	flex: 1;
+	border-radius: 50px;
+  }
+  .banner-text-item .book {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	padding: 15px;
+	cursor: pointer;
+	background-color: #fde02f;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Barlow Condensed";
+	width: 20%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* map section */
+/* body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  } */
+  
+  #chartdiv {
+	width: 100%;
+	height: 500px;
+  }
+
+/* hero section */
+
+.places-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.places-text small {
+    font-family: Roboto;
+    color: #FFC342;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.places-text h2 {
+    font-family: Barlow Condensed;
+    font-size: 55px;
+    color: #191D34;
+    letter-spacing: 1px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 75%;
+    height: auto;
+}
+
+.card img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.cards .text {
+    padding: 5px;
+    font-family: Barlow Condensed;
+    line-height: 30px;
+}
+
+.cards .card-box {
+    display: flex;
+    flex-flow: row;
+    background-color: #FDE02F;
+    font-size: 18px;
+    font-family: Roboto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	border-radius: 80px;
+}
+
+.cards .time {
+    flex: 1;
+}
+
+.cards .location {
+    flex: 2;
+}
+
+.cards .cost {
+    color: #4CAFAD;
+    font-size: 20px;
+}
+
+/*------------Zoom in Photos--------------*/
+.zoom-img {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.zoom-img .img-card {
+    position: absolute;
+    overflow: hidden;
+}
+
+.img-card img {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+
+.card:hover .zoom-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+/* login button section */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+html, body{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+} */
+/* ::selection{
+  background: #ff80bf;
+}
+.container{
+  background: #fff;
+  max-width: 30px;
+  width: 5%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.container form .title{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+.container form .title:before{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+.container form .input-box{
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .input-box input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+.container form .underline::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.container form .underline::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.container form .button{
+  margin: 40px 0 20px 0;
+}
+.container .input-box input[type="submit"]{
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container .input-box input[type="submit"]:hover{
+  letter-spacing: 1px;
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+.container .option{
+  font-size: 14px;
+  text-align: center;
+}
+.container .facebook a,
+.container .twitter a{
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.container .facebook i,
+.container .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+}
+.container .twitter a{
+  background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.container .twitter a:hover{
+  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.container .facebook a{
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+.container .facebook a:hover{
+  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+} */
+
+
+
+
+
+/* login section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footersection */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
